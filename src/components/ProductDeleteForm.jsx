@@ -27,11 +27,15 @@ const ProductDelete = () => {
 
         try {
             // Make sure to use DELETE method here
-            const response = await fetch(`https://enigmatic-shelf-01881-15c9cb2f80b1.herokuapp.com/api/products/${product.name}/${product.type}`, {
-                method: 'DELETE',
+            const response = await fetch("https://enigmatic-shelf-01881-15c9cb2f80b1.herokuapp.com/delete", {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                body: JSON.stringify({
+                    name: product.name,
+                    type: product.type,
+                }),
             });
 
             const result = await response.json();
