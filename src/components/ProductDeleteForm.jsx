@@ -27,7 +27,7 @@ const ProductDelete = () => {
 
         try {
             // Make sure to use DELETE method here
-            const response = await fetch("https://shoppingpage-in.preview-domain.com/delete", {
+            const response = await fetch("https://shoppingpage-in.com/delete", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
