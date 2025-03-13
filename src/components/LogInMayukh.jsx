@@ -26,7 +26,7 @@ const LogInMayukh = () => {
     setSucces(false);
 
     try{
-      const response=await fetch("https://shoppingpage-in.preview-domain.com/LogInMayukh",{
+      const response=await fetch("https://shoppingpage-in.com/LogInMayukh",{
         method:'POST',
         headers:{
           'Content-Type':'application/json',
