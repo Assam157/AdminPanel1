@@ -29,7 +29,7 @@ const ProductModify = () => {
 
         try {
             // Make the POST request to modify the product
-            const response = await fetch('https://shoppingpage-in.preview-domain.com/api/products/modify', {
+            const response = await fetch('https://shoppingpage-in.com/api/products/modify', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
