@@ -31,7 +31,7 @@ const ProductForm = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch('https://shoppingpage-in.preview-domain.com/submit', {
+            const response = await fetch('https://shoppingpage-in.com/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
